@@ -25,5 +25,4 @@ form.addEventListener("submit", function (event) {
   resultElement.innerText = isPalindroma(word)
     ? `La parola ${word} è palindroma`
     : `La parola ${word} non è palindroma`;
-  // Validazione
 });
