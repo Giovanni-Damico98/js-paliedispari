@@ -13,6 +13,9 @@ function getRandomNumber(min = 1, max = 100, isMaxIncluded = true) {
   if (isMaxIncluded) max++;
   return Math.floor(Math.random() * (max - min)) + min;
 }
+function isPari(number) {
+  return number % 2 === 0;
+}
 // Preparazione
 const form = document.getElementById("pariodispari-form");
 const numberField = document.getElementById("number");
@@ -28,7 +31,7 @@ form.addEventListener("submit", function (event) {
   const userNumb = parseInt(numberField.value);
   const userChoice = choiceField.value;
   // Validazione
-  if (isNaN(userNumb || userNumb > 5 || userNumb < 1)) {
+  if (isNaN(userNumb) || userNumb > 5 || userNumb < 1) {
     alert("Il numero deve essere compreso tra 1 e 5");
     return;
   }
@@ -39,4 +42,14 @@ form.addEventListener("submit", function (event) {
   }
 
   // Elaborazione
+  const sum = userNumb + cpuNumb;
+  console.log(sum);
+
+  //   Individuo la scelta corretta
+  const rightChoice = isPari(sum) ? "even" : "odd";
+  //   Controllo chi ha dato la risposta giusta
+  const vincitore = userChoice === rightChoice ? "Giocatore" : "CPU";
+
+  // Output
+  resultElement.innerText = `Il vincitore è: ${vincitore}`;
 });

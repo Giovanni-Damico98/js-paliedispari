@@ -20,7 +20,9 @@
   </head>
   <body class="m-5">
     <!-- Pari o Dispari -->
-    <section class="mb-5">
+    <section
+      class="mb-5 d-flex justify-content-center flex-column align-items-center"
+    >
       <h2>Pari e Dispari</h2>
       <form id="pariodispari-form">
         <input type="number" min="1" step="1" id="number" />
@@ -31,9 +33,10 @@
         <button type="submit">OK</button>
       </form>
     </section>
-    <div id="result"></div>
+    <div id="result" class="fs-1 fw-bold"></div>
     <!-- Palindroma -->
-    <!-- <section class="mb-5">
+    <!-- <section
+      class="mb-5 d-flex justify-content-center flex-column align-items-center"
       <h2>Palindroma</h2>
       <form id="palindroma-form">
         <input type="text" id="word" minlength="4" required />

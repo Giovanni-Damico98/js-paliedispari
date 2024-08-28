@@ -39,3 +39,27 @@ function getRandomNumber(min = 1, max = 100, isMaxIncluded = true) {
   if (isMaxIncluded) max++;
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
+/**
+ * Verifica se un numero è pari.
+ *
+ * @param {number} number - Il numero da verificare.
+ * @returns {boolean} - Restituisce `true` se il numero è pari, altrimenti `false`.
+ */
+function isPari(number) {
+  return number % 2 === 0;
+}
+
+/**
+ * Verifica se il valore fornito è un numero.
+ *
+ * Questa funzione utilizza la funzione `isNaN` per determinare se il valore
+ * fornito può essere convertito in un numero. Restituisce `true` se il valore
+ * è un numero, altrimenti `false`.
+ *
+ * @param {*} value - Il valore da verificare.
+ * @returns {boolean} - `true` se il valore è un numero, altrimenti `false`.
+ */
+function isNumber(value) {
+  return !isNaN(value);
+}
