@@ -14,7 +14,7 @@ function isPalindroma(word) {
 // Rerecupero gli elementi
 const form = document.getElementById("palindroma-form");
 const wordField = document.getElementById("word");
-const resultElement = document.getElementById("result");
+const resultElement = document.getElementById("resultPalindroma");
 
 form.addEventListener("submit", function (event) {
   // Blocco il riavvio della pagina

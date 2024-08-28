@@ -51,5 +51,5 @@ form.addEventListener("submit", function (event) {
   const vincitore = userChoice === rightChoice ? "Giocatore" : "CPU";
 
   // Output
-  resultElement.innerText = `Il vincitore è: ${vincitore}`;
+  resultElement.innerText = `Il vincitore è: ${vincitore}, il numero scelto dalla CPU è: ${cpuNumb}`;
 });
