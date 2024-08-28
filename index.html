@@ -19,16 +19,31 @@
     />
   </head>
   <body class="m-5">
+    <!-- Pari o Dispari -->
     <section class="mb-5">
+      <h2>Pari e Dispari</h2>
+      <form id="pariodispari-form">
+        <input type="number" min="1" step="1" id="number" />
+        <select id="choice">
+          <option value="even">Pari</option>
+          <option value="odd">Dispari</option>
+        </select>
+        <button type="submit">OK</button>
+      </form>
+    </section>
+    <div id="result"></div>
+    <!-- Palindroma -->
+    <!-- <section class="mb-5">
       <h2>Palindroma</h2>
       <form id="palindroma-form">
         <input type="text" id="word" minlength="4" required />
         <button type="submit">OK</button>
       </form>
-    </section>
-
+    </section> -->
+    <!-- 
     <section class="mb-5 d-none"></section>
-    <div id="result" class="fs-1 fw-bold"></div>
-    <script src="js/palindroma.js"></script>
+    <div id="result" class="fs-1 fw-bold"></div> -->
+
+    <script src="js/pariodispari.js"></script>
   </body>
 </html>
